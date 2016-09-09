@@ -1,0 +1,279 @@
+/* 全体共通 */
+html, body {
+	margin: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("pic/XHsUUF1Uwz2U62d_ViYsM_20.jpeg");
+	background-attachment: fixed;
+	font-family: fantasy;
+	text-shadow: 0 0 25px #edf8ff, 0 0 20px #edf8ff, 0 0 0.40px #edf8ff;
+}
+
+a {
+	text-decoration: none;
+	color: #DDD;
+}
+
+.responsive {
+	display: none;
+}
+
+/* header */
+header {
+	height: 15vh;
+	width: 100vw;
+	background-color: black;
+	position: fixed;
+}
+
+.title {
+	color: #FFF;
+	font-size: 50px;
+	line-height: 15vh;
+}
+
+
+/* contents */
+/* title-page */
+.title-page {
+	height: 100vh;
+}
+
+.title-page h1 {
+	margin: 0;
+	color: #FFF;
+	font-size: 90px;
+	text-align: center;
+	line-height: 100vh;
+}
+
+/* top page */
+.top-image {
+	height: 85vh;
+	width: 70vw;
+}
+
+.top-list {
+	width: 30vw;
+	float: right;
+}
+.top-list ul {
+	list-style: none;
+	padding: 0;
+}
+
+.top-list ul li {
+	font-size: 25px;
+	padding: 10px 20px;
+	margin-bottom: 10px;
+}
+
+.top-list ul li:hover {
+	background-color: #444;
+}
+
+/* Description */
+.description {
+	background-color: #333;
+	margin-bottom: 10vh;
+	color: #DDD;
+}
+
+.description-content {
+	display: inline-block;
+	font-size: 30px;
+	margin: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+/* panels */
+.panels {
+	text-align: center;
+}
+
+.panels .panels-content {
+	display: inline-block;
+}
+
+.panels .panels-content img {
+	margin: 0;
+	height: 40vh;
+	width: 300px;
+	border: solid 3px #000;
+}
+
+/* other */
+.other-left-content {
+	display: inline-block;
+	font-size: 30px;
+	color: #FFF;
+	width: 70vw;
+	height: 10vh;
+	text-align: center;
+}
+
+.other-right-content {
+	display: inline-block;
+	width: 29vw;
+	color: #FFF;
+	background-color: #000;
+}
+
+.other-right-content ul {
+	margin: 0;
+	padding: 10px 5px;
+	list-style: none;
+}
+
+.other-right-content li {
+	padding: 10px 20px;
+}
+
+.other-right-content ul li:hover {
+	background-color: #555;
+}
+
+/* footer */
+footer {
+background-color: #000;
+}
+
+.footer-list {
+	display: inline-block;
+	color: #FFF;
+	height: 30vh;
+	width: 20vw;
+	list-style: none;
+}
+
+.footer-list li {
+	padding: 10px 5px;
+}
+
+.footer-list li:hover {
+	background-color: #555;
+}
+
+.footer-form {
+	display: inline-block;
+	padding: 10px;
+	color:#aaa;
+	border:solid 1px #ccc;
+	margin: 20px 30px;;
+	width: 50vw;
+	height: 25vh;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+	float: right;
+}
+
+.footer-form textarea {
+	width: 50vw;
+	height: 15vh;
+	font-size: 1.5em;
+}
+
+.footer-form input {
+	margin-top: 10px;
+	padding: 15px 40px;
+    font-size: 1.2em;
+    background-color: #AAA;
+    color: #000;
+    border-style: none;
+	float: right;
+}
+
+
+/* メディアクエリ */
+@media screen and (max-width: 480px) {
+	.responsive {
+		display: block;
+	}
+
+	.title-page h1 {
+		font-size: 50px;
+	}
+
+	.top-image {
+		width: 100vw;
+	}
+
+	.top-list {
+		float: none;
+		text-align: center;
+	}
+
+	.top-list li {
+		display: inline-block;
+	}
+
+	.description {
+		background-color: #333;
+	}
+
+	.panels .panels-content {
+		display: block;
+	}
+
+	.panels .panels-content img {
+		width: 100vw;
+	}
+
+	.other-left-content, .other-right-content {
+		width: 100vw;
+		height: 13vh;
+	}
+
+	.other-right-content {
+		background-color: #AAA;
+		height: 8vh;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.other-right-content ul {
+		padding: 0;
+		text-align: center;
+	}
+
+	.other-right-content ul li {
+		display: inline-block;
+		font-size: 20px;
+		padding: 5px 10px;
+	}
+
+	.other-right-content ul li:hover {
+		background-color: #333;
+		padding: 5px 10px;
+	}
+
+	.footer-list {
+		margin: 0;
+		padding: 0;
+		width: 100vw;
+		height: 20px;
+		text-align: center;
+	}
+
+	.footer-list li {
+		display: inline-block;
+		font-size: 1.1em;
+	}
+
+	.footer-form {
+		float: none;
+		width: 80vw;
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 850px) {
+	.panels .panels-content img {
+		width: 40vw;
+	}
+}
